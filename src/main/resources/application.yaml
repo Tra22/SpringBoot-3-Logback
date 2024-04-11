@@ -1,0 +1,20 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: logback
+  profiles:
+    active: dev
+management:
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: shutdown,env,beans
