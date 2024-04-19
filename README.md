@@ -55,7 +55,4 @@ Clone the project and use Maven to build the server
 
 	$ mvn clean install
 
-Swagger UI access
-
- 	http://localhost:8080/swagger-ui.html
 	
